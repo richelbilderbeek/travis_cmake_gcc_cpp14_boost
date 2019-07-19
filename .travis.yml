@@ -8,7 +8,6 @@ addons:
     packages: libboost-all-dev
 
 script: 
-  - cmake CMakeLists.txt
-  #- cmake -D CMAKE_C_COMPILER=gcc-5 -D CMAKE_CXX_COMPILER=g++-5 CMakeLists.txt
+  - cmake .
   - make
   - ./travis_cmake_gcc_cpp14_boost
